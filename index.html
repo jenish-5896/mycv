@@ -71,6 +71,26 @@
       border-radius: 5px;
       font-size: 13px;
     }
+    .skills-container {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.skills-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.badge {
+  display: inline-block;
+  background: #e9ecef;
+  padding: 5px 10px;
+  margin: 3px;
+  border-radius: 5px;
+  font-size: 13px;
+}
   </style>
 </head>
 
@@ -92,21 +112,36 @@
     </section>
 
     <section>
-      <h2>Skills</h2>
-      <div>
-        <span class="badge">Linux</span>
-        <span class="badge">Docker</span>
-        <span class="badge">Kubernetes</span>
-        <span class="badge">AWS</span>
-        <span class="badge">Azure</span>
-        <span class="badge">CI/CD (Jenkins, GitHub Actions)</span>
-        <span class="badge">Terraform</span>
-        <span class="badge">Ansible</span>
-        <span class="badge">Git</span>
-        <span class="badge">Bash/Shell Scripting</span>
-        <span class="badge">Monitoring (Prometheus, Grafana)</span>
-      </div>
-    </section>
+  <h2>Skills</h2>
+
+  <div class="skills-container">
+
+    <!-- Left Side -->
+    <div class="skills-box">
+      <span class="badge">Problem Solving</span>
+      <span class="badge">Team Collaboration</span>
+      <span class="badge">Communication</span>
+      <span class="badge">Incident Management</span>
+      <span class="badge">Time Management</span>
+    </div>
+
+    <!-- Right Side -->
+    <div class="skills-box">
+      <span class="badge">Linux</span>
+      <span class="badge">Docker</span>
+      <span class="badge">Kubernetes</span>
+      <span class="badge">AWS</span>
+      <span class="badge">Azure</span>
+      <span class="badge">CI/CD (Jenkins, GitHub Actions)</span>
+      <span class="badge">Terraform</span>
+      <span class="badge">Ansible</span>
+      <span class="badge">Git</span>
+      <span class="badge">Bash/Shell Scripting</span>
+      <span class="badge">Prometheus & Grafana</span>
+    </div>
+
+  </div>
+</section>
 
     <section>
       <h2>Experience</h2>
